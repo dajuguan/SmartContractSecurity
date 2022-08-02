@@ -6,6 +6,7 @@
 主要的风险就是调用外部合约会接管合约的控制流。在可重入攻击中，恶意合约在被攻击合约的第一个函数执行完成前在再次调用合约，这可能导致函数调用与预期行为不一致。核心流程与原理如下:
 ![](/entries/SW107-Reentrancy/concept.png)
 # 合约案例
+[完整代码和文档](https://github.com/dajuguan/SmartContractSecurity/tree/main/entries/SW107-Reentrancy).
 ## 被攻击合约
 ```
 // SPDX-License-Identifier: GPL-3.0
